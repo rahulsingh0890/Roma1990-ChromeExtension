@@ -74,7 +74,7 @@ Roma1990-ChromeExtension/
 
 ## Related
 
-This is the browser extension companion to the [Roma1990 Pomodoro Timer](https://github.com/rahulsingh0890/the-pomodoro) desktop app built with Next.js and Tauri.
+This is the browser extension companion to the [Roma1990 Pomodoro Timer](https://github.com/rahulsingh0890/Roma1990) desktop app built with Next.js and Tauri.
 
 ## License
 
