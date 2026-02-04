@@ -78,6 +78,6 @@ This is the browser extension companion to the [Roma1990 Pomodoro Timer](https:/
 
 ## License
 
-This project is licensed under the [MIT License](LICENSE).
+MIT License - feel free to use and modify!
 
-Copyright (c) 2026 Rahul Singh. You are free to use, modify, and distribute this software. See the [LICENSE](LICENSE) file for full details.
+Made with love and tomatoes.
