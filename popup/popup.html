@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="popup.css">
+  <title>Roma1990 Pomodoro</title>
+</head>
+<body>
+  <div class="popup-container">
+    <div class="session-counter" id="sessionCounter">
+      <span class="session-count" id="sessionCount">0</span>
+      <span class="session-label" id="sessionLabel">sessions</span>
+    </div>
+
+    <div class="clock-wrapper">
+      <div class="clock-body">
+        <div class="display-area">
+          <div class="flip-clock" id="flipClock">
+            <!-- Minutes panel -->
+            <div class="flip-panel" id="minutesPanel">
+              <div class="flip-card" id="minTens"></div>
+              <div class="flip-card" id="minOnes"></div>
+            </div>
+            <span class="separator">:</span>
+            <!-- Seconds panel -->
+            <div class="flip-panel" id="secondsPanel">
+              <div class="flip-card" id="secTens"></div>
+              <div class="flip-card" id="secOnes"></div>
+            </div>
+          </div>
+          <span class="branding">Roma1990</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="controls-section">
+      <div class="slider-container">
+        <div class="value-display" id="durationDisplay">25 minutes</div>
+        <div class="slider-wrapper">
+          <input type="range" min="5" max="60" value="25"
+                 class="slider" id="durationSlider">
+        </div>
+        <div class="slider-labels">
+          <span>5 min</span>
+          <span>60 min</span>
+        </div>
+      </div>
+
+      <div class="button-container">
+        <button class="action-button start" id="actionButton">Start</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
