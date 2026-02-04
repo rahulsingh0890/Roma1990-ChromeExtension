@@ -44,9 +44,11 @@ async function updateBadge() {
     const text = mins >= 5 ? `${mins}m` : `${mins}:${secs.toString().padStart(2, '0')}`;
     chrome.action.setBadgeText({ text });
     chrome.action.setBadgeBackgroundColor({ color: '#E86F4A' });
+    chrome.action.setBadgeTextColor({ color: '#FFFFFF' });
   } else if (state.timerState === 'completed') {
     chrome.action.setBadgeText({ text: '!' });
     chrome.action.setBadgeBackgroundColor({ color: '#4CAF50' });
+    chrome.action.setBadgeTextColor({ color: '#FFFFFF' });
   } else {
     chrome.action.setBadgeText({ text: '' });
   }
