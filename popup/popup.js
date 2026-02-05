@@ -118,7 +118,7 @@ function playChime() {
     oscillator.type = 'sine';
 
     gain.gain.setValueAtTime(0, startTime);
-    gain.gain.linearRampToValueAtTime(0.3, startTime + 0.05);
+    gain.gain.linearRampToValueAtTime(0.5, startTime + 0.05);
     gain.gain.exponentialRampToValueAtTime(0.01, startTime + duration);
 
     oscillator.start(startTime);
@@ -126,8 +126,12 @@ function playChime() {
   };
 
   const now = ctx.currentTime;
-  playNote(523.25, now, 0.4);        // C5
-  playNote(659.25, now + 0.15, 0.5); // E5
+  // Play the two-note chime 3 times over ~3 seconds
+  for (let i = 0; i < 3; i++) {
+    const offset = i * 1.0;
+    playNote(523.25, now + offset, 0.4);        // C5
+    playNote(659.25, now + offset + 0.15, 0.5); // E5
+  }
 }
 
 // === Service Worker Communication ===
